@@ -516,6 +516,15 @@ _.extend(Slice.prototype, {
     // now.
     self.declaredExports = null;
 
+    
+
+    _.each(self.packageVariables, function(packageVar, index){
+
+      if(packageVar.name == 'Date'){
+        self.packageVariables.splice(index, 1);
+      }
+    });
+
     console.log(self.packageVariables);
 
     self.resources = resources;
