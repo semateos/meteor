@@ -525,7 +525,7 @@ _.extend(Slice.prototype, {
       }
     });
 
-    console.log(self.packageVariables);
+    //console.log(self.packageVariables);
 
     self.resources = resources;
     self.isBuilt = true;
