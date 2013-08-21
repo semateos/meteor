@@ -516,6 +516,8 @@ _.extend(Slice.prototype, {
     // now.
     self.declaredExports = null;
 
+    console.log(self.packageVariables);
+
     self.resources = resources;
     self.isBuilt = true;
   },
